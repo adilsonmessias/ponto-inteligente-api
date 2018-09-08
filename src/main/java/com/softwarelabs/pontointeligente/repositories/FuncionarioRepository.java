@@ -5,13 +5,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.softwarelabs.pontointeligente.entity.Funcionario;
 
-@Transactional(readOnly=true)
-public interface FuncionarioRepository extends JpaRepository<Funcionario, Long>{
-	
-	Funcionario FindByCpf(String cpf);
-	
-	Funcionario FindByEmail(String email);
-	
-	Funcionario FindByCpforEmail(String cpf, String email);
 
+
+@Transactional(readOnly = true)
+public interface FuncionarioRepository extends JpaRepository<Funcionario, Long> {
+
+	Funcionario findByCpf(String cpf);
+	
+	Funcionario findByEmail(String email);
+	
+	Funcionario findByCpfOrEmail(String cpf, String email);
 }
