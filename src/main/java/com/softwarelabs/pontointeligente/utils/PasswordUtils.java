@@ -17,7 +17,7 @@ public class PasswordUtils {
 	 * @retun String
 	 */
 	
-	public static String gerarBCript(String senha) {
+	public static String gerarBCrypt(String senha) {
 		if(senha == null) {
 		return senha;
 		}

@@ -1,3 +1,5 @@
+/* o codigo esta  comentado
+
 CREATE TABLE `empresa` (
   `id` bigint(20) NOT NULL,
   `cnpj` varchar(255) NOT NULL,
@@ -82,3 +84,4 @@ ALTER TABLE `funcionario`
 --
 ALTER TABLE `lancamento`
   ADD CONSTRAINT `FK46i4k5vl8wah7feutye9kbpi4` FOREIGN KEY (`funcionario_id`) REFERENCES `funcionario` (`id`);
+*/
